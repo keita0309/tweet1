@@ -35,10 +35,6 @@ Things you may want to cover:
 - has_many :tweets
 - has_many :comments
 
-### Association
-- has many :groups_users, throgh: :groups_users
-- has many :messages
-
 ## tweetテーブル
 |Column|Type|Options|
 |------|----|-------|
