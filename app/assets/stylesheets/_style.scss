@@ -1,0 +1,42 @@
+.header{
+  position: fixed; /*画面の決まった位置に指定*/
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom: 1px solid gray;
+  padding: 10px;
+  div.header__bar{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 660px;
+    position: relative;
+    h1.header__top{
+      font-size: 20px;
+      line-height: 41px;
+      float: left;
+      color: gray;
+      a {
+        display: block;
+      }
+    }
+  }
+  .user_nav {
+    height: 100px;
+    position: absolute;
+    right: 0;
+    a.post{
+      padding: 8px 20px;
+      font-size: 14px;
+      border: 2px solid #57C3E9;
+      color: #57C3E9;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 3px;
+      display: inline-block;
+    }
+  }
+}
