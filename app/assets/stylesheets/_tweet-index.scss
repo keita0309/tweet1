@@ -1,0 +1,32 @@
+.content_row{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 81px;
+  margin-bottom: 0;
+  max-width: 660px;
+  .content_post{
+    margin: 20px 0;
+    padding: 30px;
+    position: relative;
+    height: 400px;
+    color: #fff;
+    background-size: cover;
+    background-position: center center;
+    a{
+      display: block;
+    }
+    .name{
+      position: absolute;
+      right: 30px;
+      bottom: 30px;
+      z-index: 2;
+      font-size: 13px;
+      color: gray;
+      span{
+        font-size: 9px;
+        display: block;
+      }
+    }
+  }
+}
