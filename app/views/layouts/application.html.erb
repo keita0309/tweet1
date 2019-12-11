@@ -13,7 +13,15 @@
     <header class="header">
       <div class="header__bar">
         <h1 class="header__top"><a herh="/">Tweet</a></h1>
-        <div class="user_nav">test1
+        <div class="user_nav">
+          <span>test1
+            <ul class="user__info">
+              <li>
+                <a herh="#">マイページ</a>
+                <%= link_to "ログアウト", destroy_user_session_path,method: :delete %>
+              </li>
+            </ul>
+          </span>
           <a class="post" herh="/">投稿する</a>
         </div>
       </div>

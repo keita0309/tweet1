@@ -29,6 +29,46 @@
     height: 100px;
     position: absolute;
     right: 0;
+    span{
+      margin: 8px 0 0 0;
+      display: block;
+      float: left;
+      margin-left: 30px;
+      width: 70px;
+      height: 50px;
+      font-size: 1em;
+      color: gray;
+      cursor: pointer;
+      &:after {
+        content: '▼';
+        font-size: .7em;
+        margin-left: -4px;
+      }
+      &:hover ul {
+        display: block;
+      }
+    }
+    ul {
+      display: none;
+      position: absolute;
+      top: 46px;
+      right: 110px;
+      li {
+        background-color: #f0f0f0;
+        a {
+          display: block;
+          padding: 10px 5px;
+          text-align: left;
+          border-bottom: 1px solid #d8d8d8;
+          text-decoration: none;
+          color: grey;
+        }
+        a:hover{
+          color: black;
+          text-decoration: none;
+      }
+      }
+    }
     a.post{
       padding: 8px 20px;
       font-size: 14px;
