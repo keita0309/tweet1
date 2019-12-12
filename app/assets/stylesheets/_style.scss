@@ -1,0 +1,85 @@
+.header{
+  position: fixed; /*画面の決まった位置に指定*/
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom: 1px solid gray;
+  padding: 10px;
+  z-index: 5;
+  div.header__bar{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 660px;
+    position: relative;
+    h1.header__top{
+      font-size: 20px;
+      line-height: 41px;
+      float: left;
+      color: gray;
+      cursor: pointer;
+      a {
+        display: block;
+      }
+    }
+  }
+  .user_nav {
+    height: 100px;
+    position: absolute;
+    right: 0;
+    span{
+      margin: 8px 0 0 0;
+      display: block;
+      float: left;
+      margin-left: 30px;
+      width: 70px;
+      height: 50px;
+      font-size: 1em;
+      color: gray;
+      cursor: pointer;
+      &:after {
+        content: '▼';
+        font-size: .7em;
+        margin-left: -4px;
+      }
+      &:hover ul {
+        display: block;
+      }
+    }
+    ul {
+      display: none;
+      position: absolute;
+      top: 46px;
+      right: 110px;
+      li {
+        background-color: #f0f0f0;
+        a {
+          display: block;
+          padding: 10px 5px;
+          text-align: left;
+          border-bottom: 1px solid #d8d8d8;
+          text-decoration: none;
+          color: grey;
+        }
+        a:hover{
+          color: black;
+          text-decoration: none;
+      }
+      }
+    }
+    a.post{
+      padding: 8px 20px;
+      font-size: 14px;
+      border: 2px solid #57C3E9;
+      color: #57C3E9;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 3px;
+      display: inline-block;
+      cursor: pointer;
+    }
+  }
+}
